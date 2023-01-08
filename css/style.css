@@ -1,0 +1,339 @@
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/latoRegular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/latoMedium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/latoSemibold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Georgia";
+    src: url("../fonts/georgiaBold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Georgia";
+    src: url("../fonts/georgia.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font: 1.25rem/1.5rem 'Lato', sans-serif;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.header {
+    width: 100%;
+    /*height: 85px;*/
+}
+
+.header__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.header__logo {
+
+}
+
+.header__logo-img {
+    /*width: 5.18vw;*/
+    margin-right: 172.45px;
+}
+
+.header__menu {
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+}
+
+.menu__list {
+    margin-block-end: 0;
+    margin-block-start: 0;
+    margin-left: -3.6em;
+    padding: 30px 0 31px;
+}
+
+.menu__item:nth-child(n) {
+    margin-left: 3.6em;
+}
+
+.menu__item {
+    display: inline-block;
+    color: #292929;
+}
+
+.header__auth {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.auth {
+    width: 277px;
+    height: 51px;
+}
+
+.auth__sign-in {
+    text-decoration: none;
+    color: #000000;
+}
+
+.auth__btn {
+    width: 183px;
+    height: 51px;
+}
+
+.btn {
+    background-color: #01996D;
+    color: #fff;
+    border: 1px solid #01996D;
+    border-radius: 0.25rem;
+    text-align: center;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+.main__suggestion {
+
+}
+
+.suggestion {
+    width: 100%;
+    height: 895px;
+    background: url("../images/radu-florin-1.jpg") no-repeat center / cover, linear-gradient(112.58deg, #FFFFFF 18.15%, rgba(255, 255, 255, 0) 53.07%), rgba(0, 0, 0, 0.1);
+}
+
+.suggestion__container {
+}
+
+.suggestion-item {
+    position: relative;
+    top:175px;
+    left: 0;
+    width:440px;
+    height: 384px;
+    display: flex;
+    flex-direction: column;
+}
+
+.suggestion-title {
+    margin-block-end: 0;
+    margin-block-start: 0;
+    font-family: Georgia, serif ;
+    font-size: 3.25em;
+    line-height: 1.138em;
+    color: #01996D;
+    font-weight: 700;
+}
+
+.suggestion-text {
+
+    line-height: 1.445em;
+    margin: 30px 0 18px;
+    min-height: 32.03%;
+}
+
+.suggestion-btn {
+    width: 224px;
+    height: 65px;
+}
+.steps {
+}
+
+.steps__container {
+    margin-top: 169px;
+}
+
+.steps__sub-title {
+    font-size: 1.2em;
+    line-height: 1.58em;
+    color:#424242;
+    width: 100%;
+}
+
+.steps__concept {
+    height: 327px;
+}
+
+.concept {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.concept__title {
+    margin-block-end: 0;
+    margin-block-start: 0;
+    width: 649px;
+    font-family: Georgia, serif;
+    font-weight: 700;
+    font-size: 2.5em;
+    line-height:1.58em ;
+    color: #01996D;
+}
+
+.concept__text {
+    margin-block-end: 0;
+    margin-block-start: 0;
+    width: 649px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #424242;
+    padding-top: 20px;
+}
+
+.steps__items {
+    height: 1065px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.steps__card {
+}
+
+.card {
+    width: 392px;
+}
+.card:nth-child(2){
+    align-self: flex-end;
+}
+.card:nth-child(3){
+    margin-top: 60px;
+}
+.card__number {
+    font-family: Georgia,serif;
+    font-weight: 400;
+    font-size: 7.5em;
+    /*line-height:4.5em ;*/
+    color:rgba(1, 153, 109, 0.2);
+    position: absolute;
+    z-index: 0;
+}
+
+.card__title {
+    margin-block-end: 0;
+    font-family: Georgia,serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    line-height: 1.5;
+    color: #000;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+
+}
+
+.card__text {
+    line-height: 1.5;
+    font-weight: 500;
+    color:#424242;
+    margin-top: 55px;
+    margin-bottom: 48px;
+}
+
+.card__img {
+    width: 390px;
+    height: 492px;
+    border-radius: 0.6em;
+}
+.story {
+    background-color: #245852;
+    width: 100%;
+    height: 922px;
+}
+.story__wrapper {
+    margin: 0 auto;
+    padding: 229px 207px 176.89px 207px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.story__description {
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    margin-right: 61px;
+}
+
+.story__title {
+    margin-block-end: 0;
+    margin-block-start: 0;
+    width: 580px;
+    font-family: Georgia, serif;
+    font-weight: 700;
+    font-size: 2.5em;
+    line-height:1.58em ;
+    color: #FFFFFF;
+}
+
+.story__text {
+    margin-block-end: 0;
+    margin-block-start: 0;
+    font-weight: 600;
+    font-size: 1.25em;
+    line-height: 1.56;
+    margin: 33px 0 57px ;
+}
+
+.story__btn {
+    width: 240px;
+    height: 65px;
+}
+
+.story__video {
+    width: 896px;
+    height: 516px;
+    border-radius: 12px;
+    border:  2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("../images/video-background.jpg") no-repeat center/cover;
+}
+
+.video-icon {
+}
+
+.footer {
+}
+
+[class*="__container"] {
+    /*width: 1370px;*/
+    /*width: 89.128vw;*/
+    width: calc(100% * 1370 / 1920);
+    margin: 0 auto;
+}
