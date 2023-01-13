@@ -41,7 +41,7 @@ a {
     text-decoration: none;
 }
 
-p, ul, h1 {
+p, ul, h1, h2 {
     margin-block-end: 0;
     margin-block-start: 0;
 }
@@ -79,9 +79,6 @@ body {
     height: 1.682%;
 }
 
-.header__logo-img {
-}
-
 .header__menu {
     color: #292929;
     flex: 1 1 auto;
@@ -89,9 +86,6 @@ body {
     flex-wrap: wrap-reverse;
     column-gap: 3.75vw;
     justify-content: space-between;
-}
-
-.menu {
 }
 
 .menu__list {
@@ -141,6 +135,13 @@ body {
     margin: 0 auto;
 }
 
+[class$="__section-title"] {
+    font-family: Georgia, serif;
+    font-weight: 700;
+    font-size: clamp(2.5rem, 2.6042vw, 3.125rem);
+    line-height: 1.58;
+}
+
 .main {
     flex: 1 1 auto;
 }
@@ -157,9 +158,6 @@ body {
     font-size: clamp(1rem, 1.042vw, 1.25rem);
 }
 
-.suggestion__container {
-}
-
 .suggestion-item {
     position: relative;
     top: 8.75em;
@@ -172,7 +170,7 @@ body {
 
 .suggestion-title {
     font-family: Georgia, serif;
-    font-size: clamp(3rem, 3.385vw, 4.06rem);
+    font-size: clamp(3rem, 3.3854vw, 4.063rem);
     line-height: 1.138em;
     color: #01996D;
     font-weight: 700;
@@ -188,9 +186,6 @@ body {
 .suggestion-btn {
     width: 11.2em;
     height: 3.25em;
-}
-
-.steps {
 }
 
 .steps__container {
@@ -216,11 +211,7 @@ body {
     padding-bottom: 2.5em;
 }
 
-.concept__title {
-    font-family: Georgia, serif;
-    font-weight: 700;
-    font-size: 2.5em;
-    line-height: 1.58em;
+.concept__section-title {
     width: 11.68em;
     color: #01996D;
 }
@@ -324,10 +315,6 @@ body {
 }
 
 .story__title {
-    font-family: Georgia, serif;
-    font-weight: 700;
-    font-size: 2.5em;
-    line-height: 1.57;
     color: #FFFFFF;
 }
 
@@ -481,12 +468,8 @@ body {
     color: #424242;
 }
 
-.product-content__title {
+.product-content__section-title {
     margin-top: var(--content-item-margin-top);
-    font-family: Georgia, serif;
-    font-weight: 700;
-    font-size: clamp(2.5rem, 2.604vw, 3.125rem);
-    line-height: 1.58em;
     color: #01996D;
 }
 
@@ -503,11 +486,11 @@ body {
 }
 
 .footer {
-    padding: 2.638rem 3.875rem;
+    padding: 2.1875vw 3.2292vw;
     margin-top: 10.5rem;
     background-color: #245852;
     width: 100%;
-    min-height: calc(654 / 1920 * 100vw);
+    min-height: calc(570 / 1920 * 100vw);
     font-size: clamp(1rem, 1.042vw, 1.25rem);
 }
 
@@ -517,7 +500,6 @@ body {
 }
 
 .footer-menu__logo {
-    color: #FFFFFF;
     font-size: 2em;
     line-height: 1.366;
 }
@@ -526,7 +508,7 @@ body {
     height: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    grid-template-rows: minmax(calc(654 / 1920 * 100vw), auto);
+    grid-template-rows: minmax(calc(570 / 1920 * 100vw), auto);
     gap: 3rem;
     grid-auto-flow: row;
     justify-items: center;
@@ -546,11 +528,12 @@ body {
     font-weight: 600;
 }
 
-.footer-menu__item {
-    margin: 3.125vw 0;
+.footer-menu__list a {
+    color: #FFFFFF;
 }
 
-.footer__social-networking {
+.footer-menu__item:nth-child(n+2) {
+    margin-top: 3.125vw;
 }
 
 .social-networking {
@@ -588,9 +571,6 @@ body {
     background: #FFFFFF url("../images/icons/twitter.png") no-repeat center;
 }
 
-.footer__discover {
-}
-
 .discover {
     width: 26.25rem;
     display: flex;
@@ -618,7 +598,6 @@ body {
     width: 12.625rem;
     border-radius: 1.25rem;
 }
-
 
 .discover__link:nth-child(n+2) {
     margin-left: 0.736vw;
